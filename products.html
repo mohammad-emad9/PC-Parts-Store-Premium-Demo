@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse our extensive collection of premium PC components including GPUs, CPUs, RAM, Storage, and more.">
+    <title>Products - TechForge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="navbar-brand-icon">⚡</div>
+                <span>TechForge</span>
+            </a>
+
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="products.html" class="navbar-link active">Products</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <button class="btn-icon btn-secondary navbar-cart" id="cart-btn">
+                    🛒
+                    <span class="navbar-cart-badge" id="cart-count">0</span>
+                </button>
+                <button class="navbar-toggle" id="navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Page -->
+    <section class="products-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <span class="breadcrumb-item"><a href="index.html">Home</a></span>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-item breadcrumb-current">Products</span>
+            </nav>
+
+            <!-- Products Header -->
+            <div class="products-header">
+                <div>
+                    <h1 style="margin-bottom: 0.5rem;">All Products</h1>
+                    <p class="products-count">Showing <strong id="product-count">12</strong> products</p>
+                </div>
+
+                <div class="products-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="gpu">GPUs</button>
+                    <button class="filter-btn" data-filter="cpu">CPUs</button>
+                    <button class="filter-btn" data-filter="ram">RAM</button>
+                    <button class="filter-btn" data-filter="storage">Storage</button>
+                    <button class="filter-btn" data-filter="motherboard">Motherboards</button>
+                    <button class="filter-btn" data-filter="psu">PSUs</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- GPU Products -->
+                <div class="product-card" data-category="gpu">
+                    <span class="product-card-badge new">New</span>
+                    <div class="product-image">
+                        <img src="assets/images/rtx-4090.png" alt="NVIDIA RTX 4090">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=1" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Graphics Card</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=1">NVIDIA GeForce RTX 4090 Founders Edition</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">24GB GDDR6X</span>
+                            <span class="product-spec">2520 MHz</span>
+                            <span class="product-spec">450W</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$1,599</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gpu">
+                    <div class="product-image">
+                        <img src="assets/images/rtx-4080.png" alt="NVIDIA RTX 4080">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=7" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Graphics Card</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=7">NVIDIA GeForce RTX 4080 Super</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">16GB GDDR6X</span>
+                            <span class="product-spec">2550 MHz</span>
+                            <span class="product-spec">320W</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$999</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(7)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gpu">
+                    <span class="product-card-badge sale">-10%</span>
+                    <div class="product-image">
+                        <img src="assets/images/rx-7900.png" alt="AMD RX 7900 XTX">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=8" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Graphics Card</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=8">AMD Radeon RX 7900 XTX</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">24GB GDDR6</span>
+                            <span class="product-spec">2500 MHz</span>
+                            <span class="product-spec">355W</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$899<span class="product-price-old">$999</span></span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(8)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CPU Products -->
+                <div class="product-card" data-category="cpu">
+                    <span class="product-card-badge">Hot</span>
+                    <div class="product-image">
+                        <img src="assets/images/ryzen-9.png" alt="AMD Ryzen 9 7950X">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=2" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Processor</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=2">AMD Ryzen 9 7950X 16-Core</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">16 Cores</span>
+                            <span class="product-spec">5.7 GHz</span>
+                            <span class="product-spec">AM5</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$549</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(2)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cpu">
+                    <span class="product-card-badge new">New</span>
+                    <div class="product-image">
+                        <img src="assets/images/i9-14900k.png" alt="Intel Core i9-14900K">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=9" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Processor</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=9">Intel Core i9-14900K</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">24 Cores</span>
+                            <span class="product-spec">6.0 GHz</span>
+                            <span class="product-spec">LGA1700</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$589</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(9)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RAM Products -->
+                <div class="product-card" data-category="ram">
+                    <span class="product-card-badge sale">-15%</span>
+                    <div class="product-image">
+                        <img src="assets/images/ddr5-ram.png" alt="G.Skill Trident Z5 RGB">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=3" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Memory</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=3">G.Skill Trident Z5 RGB DDR5-6400</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">32GB (2x16GB)</span>
+                            <span class="product-spec">6400 MHz</span>
+                            <span class="product-spec">CL32</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$189<span class="product-price-old">$219</span></span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(3)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="ram">
+                    <div class="product-image">
+                        <img src="assets/images/corsair-ram.png" alt="Corsair Dominator Platinum">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=10" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Memory</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=10">Corsair Dominator Platinum RGB DDR5</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">64GB (2x32GB)</span>
+                            <span class="product-spec">6000 MHz</span>
+                            <span class="product-spec">CL30</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$349</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(10)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storage Products -->
+                <div class="product-card" data-category="storage">
+                    <div class="product-image">
+                        <img src="assets/images/samsung-ssd.png" alt="Samsung 990 Pro">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=4" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Storage</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=4">Samsung 990 Pro 2TB NVMe SSD</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">2TB</span>
+                            <span class="product-spec">7450 MB/s</span>
+                            <span class="product-spec">PCIe 4.0</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$179</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(4)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="storage">
+                    <span class="product-card-badge new">New</span>
+                    <div class="product-image">
+                        <img src="assets/images/wd-ssd.png" alt="WD Black SN850X">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=11" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Storage</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=11">WD Black SN850X 4TB NVMe</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">4TB</span>
+                            <span class="product-spec">7300 MB/s</span>
+                            <span class="product-spec">PCIe 4.0</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$349</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(11)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motherboard Products -->
+                <div class="product-card" data-category="motherboard">
+                    <span class="product-card-badge new">New</span>
+                    <div class="product-image">
+                        <img src="assets/images/asus-mobo.png" alt="ASUS ROG Maximus">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=5" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Motherboard</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=5">ASUS ROG Maximus Z790 Hero</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">Z790</span>
+                            <span class="product-spec">DDR5</span>
+                            <span class="product-spec">WiFi 6E</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$629</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(5)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="motherboard">
+                    <div class="product-image">
+                        <img src="assets/images/msi-mobo.png" alt="MSI MEG X670E ACE">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=12" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Motherboard</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=12">MSI MEG X670E ACE</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">X670E</span>
+                            <span class="product-spec">DDR5</span>
+                            <span class="product-spec">WiFi 6E</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$699</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(12)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PSU Products -->
+                <div class="product-card" data-category="psu">
+                    <div class="product-image">
+                        <img src="assets/images/corsair-psu.png" alt="Corsair RM1000x">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=6" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Power Supply</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=6">Corsair RM1000x 80+ Gold</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">1000W</span>
+                            <span class="product-spec">80+ Gold</span>
+                            <span class="product-spec">Modular</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$189</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(6)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">⚡</div>
+                        <span>TechForge</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted source for premium PC components.
+                        Building dreams, one component at a time.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">📘</a>
+                        <a href="#" class="footer-social-link">🐦</a>
+                        <a href="#" class="footer-social-link">📸</a>
+                        <a href="#" class="footer-social-link">💼</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html?category=gpu" class="footer-link">Graphics Cards</a></li>
+                        <li><a href="products.html?category=cpu" class="footer-link">Processors</a></li>
+                        <li><a href="products.html?category=ram" class="footer-link">Memory</a></li>
+                        <li><a href="products.html?category=storage" class="footer-link">Storage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Press</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Shipping</a></li>
+                        <li><a href="#" class="footer-link">Returns</a></li>
+                        <li><a href="#" class="footer-link">Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 TechForge. All rights reserved. Demo Project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3 class="cart-title">Shopping Cart</h3>
+            <button class="cart-close" id="cart-close">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p style="text-align: center; color: var(--text-muted); padding: 2rem;">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span class="cart-total-label">Total:</span>
+                <span class="cart-total-value" id="cart-total">$0.00</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;">Checkout (Demo)</button>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

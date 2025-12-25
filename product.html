@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="NVIDIA GeForce RTX 4090 - The ultimate graphics card for gaming and creative professionals.">
+    <title>NVIDIA RTX 4090 - TechForge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="navbar-brand-icon">⚡</div>
+                <span>TechForge</span>
+            </a>
+
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="products.html" class="navbar-link active">Products</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <button class="btn-icon btn-secondary navbar-cart" id="cart-btn">
+                    🛒
+                    <span class="navbar-cart-badge" id="cart-count">0</span>
+                </button>
+                <button class="navbar-toggle" id="navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <section class="product-details">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <span class="breadcrumb-item"><a href="index.html">Home</a></span>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-item"><a href="products.html">Products</a></span>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-item"><a href="products.html?category=gpu">Graphics Cards</a></span>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-item breadcrumb-current">RTX 4090</span>
+            </nav>
+
+            <div class="product-details-grid">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="product-gallery-main">
+                        <img src="assets/images/rtx-4090.png" alt="NVIDIA GeForce RTX 4090" id="main-image">
+                    </div>
+                    <div class="product-gallery-thumbs">
+                        <div class="product-gallery-thumb active"
+                            onclick="changeImage(this, 'assets/images/rtx-4090.png')">
+                            <img src="assets/images/rtx-4090.png" alt="RTX 4090 Front">
+                        </div>
+                        <div class="product-gallery-thumb"
+                            onclick="changeImage(this, 'assets/images/rtx-4090-side.png')">
+                            <img src="assets/images/rtx-4090-side.png" alt="RTX 4090 Side">
+                        </div>
+                        <div class="product-gallery-thumb"
+                            onclick="changeImage(this, 'assets/images/rtx-4090-back.png')">
+                            <img src="assets/images/rtx-4090-back.png" alt="RTX 4090 Back">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <span class="product-info-badge">✓ In Stock</span>
+
+                    <h1 class="product-info-title">NVIDIA GeForce RTX 4090 Founders Edition</h1>
+
+                    <div class="product-info-rating">
+                        <div class="product-info-stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <span class="product-info-reviews">(127 reviews)</span>
+                    </div>
+
+                    <div class="product-info-price">
+                        <span class="product-info-price-current">$1,599.00</span>
+                    </div>
+
+                    <p class="product-info-description">
+                        The NVIDIA GeForce RTX 4090 is the ultimate gaming GPU, powered by the NVIDIA Ada Lovelace
+                        architecture.
+                        Experience incredible performance with up to 2x the performance of the RTX 3090 Ti,
+                        ray tracing capabilities, DLSS 3, and 24GB of lightning-fast GDDR6X memory.
+                    </p>
+
+                    <!-- Specifications -->
+                    <div class="product-specs-list">
+                        <h3 class="product-specs-title">Specifications</h3>
+                        <div class="product-specs-item">
+                            <span class="product-specs-label">GPU Memory</span>
+                            <span class="product-specs-value">24GB GDDR6X</span>
+                        </div>
+                        <div class="product-specs-item">
+                            <span class="product-specs-label">Boost Clock</span>
+                            <span class="product-specs-value">2520 MHz</span>
+                        </div>
+                        <div class="product-specs-item">
+                            <span class="product-specs-label">Memory Interface</span>
+                            <span class="product-specs-value">384-bit</span>
+                        </div>
+                        <div class="product-specs-item">
+                            <span class="product-specs-label">CUDA Cores</span>
+                            <span class="product-specs-value">16384</span>
+                        </div>
+                        <div class="product-specs-item">
+                            <span class="product-specs-label">Ray Tracing Cores</span>
+                            <span class="product-specs-value">128 (3rd Gen)</span>
+                        </div>
+                        <div class="product-specs-item">
+                            <span class="product-specs-label">Tensor Cores</span>
+                            <span class="product-specs-value">512 (4th Gen)</span>
+                        </div>
+                        <div class="product-specs-item">
+                            <span class="product-specs-label">TDP</span>
+                            <span class="product-specs-value">450W</span>
+                        </div>
+                        <div class="product-specs-item">
+                            <span class="product-specs-label">Recommended PSU</span>
+                            <span class="product-specs-value">850W</span>
+                        </div>
+                        <div class="product-specs-item">
+                            <span class="product-specs-label">Outputs</span>
+                            <span class="product-specs-value">3x DisplayPort 1.4a, 1x HDMI 2.1a</span>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="product-actions">
+                        <div class="product-quantity">
+                            <button onclick="decreaseQty()">−</button>
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button onclick="increaseQty()">+</button>
+                        </div>
+                        <button class="btn btn-primary btn-lg" onclick="addToCart(1)" style="flex: 1;">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="product-features">
+                        <div class="product-feature">
+                            <div class="product-feature-icon">🚚</div>
+                            <span class="product-feature-text">Free Shipping</span>
+                        </div>
+                        <div class="product-feature">
+                            <div class="product-feature-icon">🔄</div>
+                            <span class="product-feature-text">30-Day Returns</span>
+                        </div>
+                        <div class="product-feature">
+                            <div class="product-feature-icon">🛡️</div>
+                            <span class="product-feature-text">3-Year Warranty</span>
+                        </div>
+                        <div class="product-feature">
+                            <div class="product-feature-icon">✓</div>
+                            <span class="product-feature-text">Authentic Product</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Related Products</h2>
+                <p class="section-subtitle">You might also like these</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/rtx-4080.png" alt="NVIDIA RTX 4080">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=7" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Graphics Card</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=7">NVIDIA GeForce RTX 4080 Super</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">16GB GDDR6X</span>
+                            <span class="product-spec">2550 MHz</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$999</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(7)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="product-card-badge sale">-10%</span>
+                    <div class="product-image">
+                        <img src="assets/images/rx-7900.png" alt="AMD RX 7900 XTX">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=8" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Graphics Card</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=8">AMD Radeon RX 7900 XTX</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">24GB GDDR6</span>
+                            <span class="product-spec">2500 MHz</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$899<span class="product-price-old">$999</span></span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(8)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/corsair-psu.png" alt="Corsair RM1000x">
+                        <div class="product-image-overlay">
+                            <a href="product.html?id=6" class="btn btn-primary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Power Supply</span>
+                        <h3 class="product-title">
+                            <a href="product.html?id=6">Corsair RM1000x 80+ Gold</a>
+                        </h3>
+                        <div class="product-specs">
+                            <span class="product-spec">1000W</span>
+                            <span class="product-spec">Modular</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$189</span>
+                            <button class="btn btn-outline btn-sm" onclick="addToCart(6)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">⚡</div>
+                        <span>TechForge</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted source for premium PC components.
+                        Building dreams, one component at a time.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">📘</a>
+                        <a href="#" class="footer-social-link">🐦</a>
+                        <a href="#" class="footer-social-link">📸</a>
+                        <a href="#" class="footer-social-link">💼</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html?category=gpu" class="footer-link">Graphics Cards</a></li>
+                        <li><a href="products.html?category=cpu" class="footer-link">Processors</a></li>
+                        <li><a href="products.html?category=ram" class="footer-link">Memory</a></li>
+                        <li><a href="products.html?category=storage" class="footer-link">Storage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Press</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Shipping</a></li>
+                        <li><a href="#" class="footer-link">Returns</a></li>
+                        <li><a href="#" class="footer-link">Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 TechForge. All rights reserved. Demo Project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3 class="cart-title">Shopping Cart</h3>
+            <button class="cart-close" id="cart-close">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p style="text-align: center; color: var(--text-muted); padding: 2rem;">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span class="cart-total-label">Total:</span>
+                <span class="cart-total-value" id="cart-total">$0.00</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;">Checkout (Demo)</button>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Product Detail Page Specific Functions
+        function changeImage(thumb, src) {
+            document.getElementById('main-image').src = src;
+            document.querySelectorAll('.product-gallery-thumb').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        }
+
+        function increaseQty() {
+            const input = document.getElementById('quantity');
+            if (input.value < 10) input.value = parseInt(input.value) + 1;
+        }
+
+        function decreaseQty() {
+            const input = document.getElementById('quantity');
+            if (input.value > 1) input.value = parseInt(input.value) - 1;
+        }
+    </script>
+</body>
+
+</html>
